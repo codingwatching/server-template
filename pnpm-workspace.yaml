@@ -7,8 +7,8 @@ onlyBuiltDependencies:
   - unrs-resolver
 catalog:
   vite: npm:@voidzero-dev/vite-plus-core@latest
-  vitest: npm:@voidzero-dev/vite-plus-test@latest
-  vite-plus: latest
+  vitest: npm:@voidzero-dev/vite-plus-test@^0.1.20
+  vite-plus: ^0.1.20
 overrides:
   vite: 'catalog:'
   vitest: 'catalog:'
@@ -19,3 +19,8 @@ peerDependencyRules:
   allowedVersions:
     vite: '*'
     vitest: '*'
+allowBuilds:
+  '@prisma/engines': true
+  '@swc/core': true
+  esbuild: true
+  prisma: true
